@@ -1,14 +1,4 @@
 #escribe tu código abajo de esta línea
-def mayor(numDatos):
-    big = input("Dame un número ")
-    while numDatos != 1:
-        num = input("Dame un número ")
-        if num > big:
-            big = num
-        else:
-            big = big
-        numDatos -= 1
-    return big
 
 
 def main():
