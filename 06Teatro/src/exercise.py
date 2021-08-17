@@ -1,5 +1,7 @@
 #escribe tu código abajo de esta línea
 def teatro():
+    precio = 200
+    perdida = 0
     edad = int(input("Dame la edad "))
     while edad != 0:
         if edad < 5:
@@ -14,17 +16,14 @@ def teatro():
             porcentaje = 25
         else:
             porcentaje = 35
-        print("Descuento de ", porcentaje, "%")
+        perdida = perdida + (precio*porcentaje/100)
+        print("Descuento de "+str(porcentaje)+"%")
         edad = int(input("Dame la edad "))
-    print("Cantidad total por descuentos: X")
+    print("Cantidad total por descuentos: "+str(perdida))
 
 
 def main():
-
     teatro()
-
-
-
 
 if __name__ == '__main__':
     main()

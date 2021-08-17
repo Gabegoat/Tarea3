@@ -16,7 +16,8 @@ def primos(num):
     return listaprimos[0]          #Se obtienen todos los numeros primos pero solo se regresa el mas cercano a la entrada del usuario
 
 def main():
-    numero = int(input())
+    #No borrar nada del main
+    numero = int(input("Dame un numero "))
     print(primos(numero))
 
 if __name__ == '__main__':
